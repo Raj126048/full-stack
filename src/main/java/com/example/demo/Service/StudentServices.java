@@ -18,7 +18,7 @@ public class StudentServices {
 
     public Iterable<Student> listAll() {
 
-        return this.repo.findAll();
+       return this.repo.findAll(Sort.by("studentname"));
     }
 
 
